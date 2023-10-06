@@ -1,0 +1,182 @@
+/* Define CSS variables for common styles */
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --primary-color: #1877f2;
+  --button-background: #42b72a;
+  --button-hover-background: #3ba626;
+}
+
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* Container styles */
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+/* Facebook Page styles */
+.facebook-page {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.facebook-page .text {
+  margin-bottom: 90px;
+}
+
+.facebook-page h1 {
+  color: var(--primary-color);
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.facebook-page p {
+  font-size: 1.75rem;
+  white-space: nowrap;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Link styles */
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.link .login:hover {
+  background: #0d65d9;
+}
+
+.link .forgot {
+  color: var(--primary-color);
+  font-size: 0.875rem;
+}
+
+.forgot{
+	margin-top: 20px;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Button styles */
+.button {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button a {
+  padding: 15px 20px;
+  background: var(--button-background);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.button a:hover {
+  background: var(--button-hover-background);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 900px) {
+  .facebook-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facebook-page .text {
+    margin-bottom: 30px;
+  }
+
+  /* Add additional responsive styles for smaller screens here */
+}
+
+/* Responsive styles for even smaller screens */
+@media (max-width: 460px) {
+  .facebook-page h1 {
+    font-size: 3.0rem;
+  }
+
+  .facebook-page p {
+    font-size: 1.0rem;
+  }
+
+  form {
+    padding: 12px;
+  }
+
+  /* Add additional responsive styles for even smaller screens here */
+}
+
+
+.title{
+	text-align:center;
+	font-size: 10px;
+	margin-bottom:20px;
+}
